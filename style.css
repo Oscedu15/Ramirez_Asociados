@@ -1061,7 +1061,7 @@ con flex 1, se divide el espacio en partes iguales */
 @media screen and (max-width:409px) {    
 
     .menu img{
-        width: 60px;
+        width: 55px;
     }
 
     .menu .navbar ul li a{
@@ -1076,7 +1076,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .header-img img {
         width: 350px;
-        margin-left: -20px;
+        margin-left: -40px;
     }
 
     .slider{
@@ -1086,7 +1086,7 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .bg {
-        width: 418px;
+        width: 340px;
         right: 0;
     }
 
@@ -1095,7 +1095,7 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .bg-productos {
-        width: 417px;
+        width: 340px;
         right: 0;
     }
 
@@ -1129,8 +1129,8 @@ con flex 1, se divide el espacio en partes iguales */
 
 
     .btn-wsp .bi-whatsapp {       
-        bottom: 2rem;
-        right: 1.5rem;  
+        bottom: 3rem;
+        right: 2.5rem;  
     } 
 
 
