@@ -1076,7 +1076,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .header-img img {
         width: 350px;
-        margin-left: -40px;
+        margin-left: -53px;
     }
 
     .slider{
@@ -1101,6 +1101,20 @@ con flex 1, se divide el espacio en partes iguales */
 
     .productos-info{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .productos h2,
+    .nosotros-text h2,
+    .reservation-heading h5 {
+        font-size: 35px;
+    }
+
+    .producto h3 {
+        margin-block: 15px;
+    }
+
+    .nosotros {
+        padding-bottom: 0px;
     }
 
     .nosotros-text-secundario{
@@ -1129,13 +1143,17 @@ con flex 1, se divide el espacio en partes iguales */
 
 
     .btn-wsp .bi-whatsapp {       
-        bottom: 3rem;
-        right: 2.5rem;  
+        bottom: 2rem;
+        right: 2rem;  
     } 
 
-
-    .address p {       
+    .address p {
         letter-spacing: 0;
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 30px;
     }
 
     .footer-top p {
