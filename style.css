@@ -40,18 +40,17 @@ html{
 
 .logo{
     color: #114d4d;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 800;    
     background-image: url("./images/lupa.png");
     background-size: 75px;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     transition: .5s;
-};
+}
 
 .logo:hover{
     color: #6e9987;
-   
 }
 
 .menu .navbar ul li {
@@ -147,7 +146,7 @@ html{
 }
 
 .header-txt h1{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 70px;
     font-weight: 600;
     color: #303030;
@@ -1058,7 +1057,12 @@ con flex 1, se divide el espacio en partes iguales */
     }
 }
 
-@media screen and (max-width:409px) {    
+@media screen and (max-width:409px) {  
+
+
+    .logo {
+    font-size: 30px;
+    }  
 
     .menu img{
         width: 55px;
@@ -1067,6 +1071,10 @@ con flex 1, se divide el espacio en partes iguales */
     .menu .navbar ul li a{
       
         font-size: 25px;
+    }
+
+    .header-txt h1 {
+        font-size: 35px;
     }
 
     .header-img {
