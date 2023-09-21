@@ -926,6 +926,10 @@ con flex 1, se divide el espacio en partes iguales */
         padding: 15px;
     }
 
+    .logo{
+        font-size: 30px;
+    }
+
     .header-info {
         flex-direction: column-reverse;}
 
@@ -940,6 +944,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .header-img img {
         width: 350px;
+        margin-left: -53px;
     }
 
     .slider{
@@ -1052,8 +1057,8 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .btn-wsp .bi-whatsapp {       
-        bottom: 0.5rem;
-        right: 0.5rem;  
+        bottom: 1.5rem;
+        right: 1.5rem;  
     }
 }
 
