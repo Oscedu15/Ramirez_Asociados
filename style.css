@@ -8,6 +8,13 @@
     list-style: none;
 }
 
+:root{
+    --color-primario: #114d4d;
+    --color-secundario: #6e9987;
+    --titulo-primario: #303030;
+    --titulo-secundario :#545454;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +24,7 @@ html{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -39,18 +46,18 @@ html{
 }
 
 .logo{
-    color: #114d4d;
-    font-size: 35px;
+    color: var(--color-primario);
+    font-size: 2.1875rem;
     font-weight: 800;    
     background-image: url("./images/lupa.png");
-    background-size: 75px;
+    background-size: 4.6875rem;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     transition: .5s;
 }
 
 .logo:hover{
-    color: #6e9987;
+    color: var(--color-secundario);
 }
 
 .menu .navbar ul li {
@@ -59,9 +66,9 @@ html{
 }
 
 .menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #114d4d;
+    font-size: 1.125rem;
+    padding: 1.25rem;
+    color: var(--color-primario);
     display: block;
     font-weight: 600;
 }
@@ -69,21 +76,21 @@ html{
 .menu .navbar ul li a::before,
 .menu .navbar ul li a::after{
     content: '';
-    width: 40px;
-    border-bottom: 2px solid #6e9987;
+    width: 2.5rem;
+    border-bottom: 2px solid var(--color-secundario);
     position: absolute;
     transition: 0.2s;
     opacity: 0;       
 }
 
 .menu .navbar ul li a::after{
-    bottom: 25px;
+    bottom: 1.5625rem;
     width: 60%;
     left: 0;
 }
 
 .menu .navbar ul li a::before{
-    bottom: 30px;
+    bottom: 1.875rem;
     width: 90%;
     right: 0;
 }
@@ -113,7 +120,7 @@ html{
 
 .bg{
     position: absolute;
-    width: 700px;
+    width: 43.75rem;
     z-index: -1;
     right: 0;
 }
@@ -121,52 +128,54 @@ html{
 
 .bg-productos{
     position: absolute;
-    width: 500px;
+    width: 31.25rem;
     z-index: -1;
     right: 0;
 }
 
 .esp{
     position: absolute;
-    top: 2885px;
+    top: 180.3125rem;
     bottom: 0;
-    width: 200px;
-    left: 10px;
+    width: 12.5rem;
+    left: .625rem;
 }
 
 .header-info {
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .header-txt {
     width: 50%;
-    padding-right: 35px;
+    padding-right: 2.1875rem;
 }
 
 .header-txt h1{
-    font-size: 40px;
-    line-height: 70px;
+    font-size: 2.5rem;
+    line-height: 4.375rem;
     font-weight: 600;
-    color: #303030;
-    margin-bottom: 25px;
+    color: var(--titulo-primario);
+    margin-bottom: 1.5625rem;
+    text-align: center;
 }
 
 .header-txt p {
-    font-size: 20px;
-    color: #545454;
-    margin-bottom: 35px;
+    font-size: 1.25rem;
+    color: var(--titulo-secundario);
+    margin-bottom: 2.1875rem;
+    text-align: center;
 }
 
 .btn-1 {
     display: inline-block;
-    background-color: #114d4d;
-    padding: 13px 30px;
-    border-radius: 25px;
+    background-color: var(--color-primario);
+    padding: .8125rem 1.875rem;
+    border-radius: 1.5625rem;
     color: #dedede;
     text-transform: capitalize;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-1:hover {
@@ -179,22 +188,22 @@ html{
 }
 
 .header-img img{
-    width: 600px;
+    width: 37.5rem;
 }
 
 .info{
-    padding: 100px;
+    padding: 6.25rem;
     display: flex;
     justify-content: space-between;
 }
 
 .infoimagen{
-    width: 50px;
+    width: 3.125rem;
 }
 
 .info-1{
-    width: 300px;
-    padding: 15px 25px;
+    width: 18.75rem;
+    padding: .9375rem 1.5625rem;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -203,20 +212,20 @@ html{
 
 
 .info-1 h3 {
-    font-size: 18px;
-    color: #303030;
-    margin-bottom: 10px;
+    font-size: 1.125rem;
+    color: var(--titulo-primario);
+    margin-bottom: .625rem;
 }
 
 .info-1 p{
-    font-size: 16px;
-    color: #545454;
+    font-size: 1rem;
+    color: var(--titulo-secundario);
 }
 
 .slider{
     display: flex;
-    width: 1000px;
-    height: 430px;
+    width: 62.5rem;
+    height: 26.875rem;
   }
   
   .slider img{
@@ -229,7 +238,7 @@ html{
   
   .slider img:hover{
     cursor: crosshair;
-    width: 250px;
+    width: 15.625rem;
     opacity: 1;
     filter: contrast(120%);
   }
@@ -242,12 +251,12 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px;
+    width: 25rem;
     z-index: -1;
 }
 
 .nosotros-info {
-    padding: 20px 0;
+    padding: 1.25rem 0;
     display: flex;
     align-items: center;
 }
@@ -257,7 +266,7 @@ html{
 }
 
 .nosotros-img img{
-    width: 350px;
+    width: 21.875rem;
 }
 
 .nosotros-txt{
@@ -265,16 +274,15 @@ html{
 }
 
 .nosotros-txt span {
-    font-size: 16px;
-    color: #ff9f0d;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .nosotros-text h2 {
-    font-size: 40px;
-    color: #303030;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: var(--titulo-primario);
+    margin-bottom: 1.875rem;
     text-align: center;
 }
 
@@ -284,32 +292,32 @@ html{
 
 
 .nosotros-text-secundario{
-    font-size: 18px;
-    color: #545454;
-    margin-bottom: 50px;
+    font-size: 1.125rem;
+    color: var(--titulo-secundario);
+    margin-bottom: 3.125rem;
 }
 
 .nosotros-text-primario{
-    font-size: 18px;
-    color: #545454;
+    font-size: 1.125rem;
+    color: var(--titulo-secundario);
 }
 
 .productos{
-    padding: 20px 0;
+    padding: 1.25rem 0;
     text-align: center;
 }
 
 .productos h2{
-    font-size: 40px;
-    color: #303030;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: var(--titulo-primario);
+    margin-bottom: 1.875rem;
 }
 
 .productos p {
-    font-size: 18px;
-    color: #545454;
-    margin-bottom: 70px;
-    padding: 0 200px;
+    font-size: 1.125rem;
+    color: var(--titulo-secundario);
+    margin-bottom: 4.375rem;
+    padding: 0 12.5rem;
 }
 
 .productos-info {
@@ -320,45 +328,45 @@ html{
 }
 
 .producto {
-    padding-bottom: 35px;
+    padding-bottom: 2.1875rem;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.5625rem;
 }
 
 .producto img{
     width: 100%;
-    height: 200px;
-    border-radius: 25px 25px 0 0;
+    height: 12.5rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
     background-size: contain;
 }
 
 .producto h3{
-    font-size: 20px;
-    color: #303030;
-    margin-top: 15px;
+    font-size: 1.25rem;
+    color: var(--titulo-primario);
+    margin-top: .9375rem;
 }
 
 .producto p {
-    font-size: 16px;
-    padding: 15px;
+    font-size: 1rem;
+    padding: .9375rem;
     color: #545454;
     margin: 0;
 }
 
 .producto span{
-    background-color: #114d4d;
-    padding: 10px;
+    background-color: var(--color-primario);
+    padding: .625rem;
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: .9375rem;
 }
 
 hr {
-    border: 1px solid #eee;
+    border: .0625rem solid #eee;
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 .footer-links {
@@ -367,20 +375,20 @@ hr {
 }
 
 .link h3 {
-    font-size: 20px;
-    color: #303030;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    color: var(--titulo-primario);
+    margin-bottom: 1.25rem;
 }
 
 .socials img {
-    margin-right: 15px;
+    margin-right: .9375rem;
 }
 
 a {
-    font-size: 16px;
+    font-size: 1rem;
     display: block;
-    margin-bottom: 10px;
-    color: #545454;
+    margin-bottom: .625rem;
+    color: var(--titulo-secundario);
 }
 
 .reservation_movil{
@@ -397,12 +405,12 @@ a {
     gap: 2rem;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: url("./images/emmanuelremix.png")
+    background-image: url("./images/emmanuel.png")
     , url("./images/lupa2.png");
-    background-size: 350px,
-    280px;
-    background-position: 0px -35px,
-    880px 90px;    
+    background-size: 21.875rem,
+    17.5rem;
+    background-position: 0px -2.1875rem,
+    55rem 5.625rem;    
 }
 
 .reservation-heading{
@@ -411,8 +419,8 @@ a {
 
 .reservation-heading h5{
     /* font-family: 'Bebas Neue', sans-serif; */
-    color: #303030;
-    font-size: 40px;
+    color: var(--titulo-primario);
+    font-size: 2.5rem;
 }
 
 .reservation-heading h4 {
@@ -444,7 +452,7 @@ a {
 }
 
 .reservation-form input:focus{    
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #2d3839;
+    box-shadow: 0 .0625rem .0625rem rgba(229, 103, 23, 0.075)inset, 0 0 8px #2d3839;
     border: 0; 
 }
 
@@ -471,10 +479,10 @@ a {
 .reservation-form .button {
     grid-area: button;
     border: 0;
-    background-color: #114d4d;
+    background-color: var(--color-primario);
     text-transform: uppercase;
     color: white;
-    border-radius: 15px;
+    border-radius: .9375rem;
     cursor: pointer;
     transition: 0.5s;  
 }
@@ -491,17 +499,17 @@ a {
 
 .btn-wsp .bi-whatsapp{
     position: fixed;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    bottom: 30px;
-    right: 70px;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    bottom: 1.875rem;
+    right: 4.375rem;
     background-color: #0df053;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    font-size: 1.875rem;
+    box-shadow: 0px 1px .625rem rgba(0,0,0,0.3);
     z-index: 100;
     transition: .5s;
 }
@@ -573,7 +581,7 @@ con flex 1, se divide el espacio en partes iguales */
 }
 
 .footer-top p{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 
@@ -584,7 +592,7 @@ con flex 1, se divide el espacio en partes iguales */
 .address p {
    
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
 }
 
 .footer-bottom {
@@ -596,7 +604,7 @@ con flex 1, se divide el espacio en partes iguales */
 .footer-bottom p {
     
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
 }
 
 .footer-bottom .icons{
@@ -604,68 +612,68 @@ con flex 1, se divide el espacio en partes iguales */
     gap: .5rem;
 }
 
-@media screen and (min-width: 1101px) and (max-width:1200px) {
+@media screen and (min-width: 68.8125rem) and (max-width:75rem) {
 
     .header-img img {
-        width: 550px;
+        width: 34.375rem;
     }
 
     .menu{
-        padding: 0 30px;
+        padding: 0 1.875rem;
     }
 
     .header-info{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .nosotros-info{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .productos{
-        padding: 0 30px;
+        padding: 0 1.875rem;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width:1100px) {    
+@media screen and (min-width: 62rem) and (max-width:68.75rem) {    
 
     .header-img img {
         width: 500px;
     }
 
     .header-info{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .slider{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .slider{
         display: flex;
-        width: 1000px;
-        height: 430px;
+        width: 62.5rem;
+        height: 26.875rem;
       }
       
       .slider img:hover{
         cursor: crosshair;
-        width: 250px;
+        width: 15.625rem;
       }
 
     .nosotros-info{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .info{
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
 
     .productos{
-        padding: 0 30px;
+        padding: 0 1.875rem;
     }
 
     .reservation {
-        background-position: 0px -35px, 720px 90px;
+        background-position: 0px -2.1875rem, 45rem 5.625rem;
     }
 
     .btn-wsp{
@@ -673,10 +681,10 @@ con flex 1, se divide el espacio en partes iguales */
     }
 }
 
-    @media(max-width: 991px) {
+    @media(max-width: 61.9375rem) {
 
     .menu{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .menu label {
@@ -699,7 +707,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .menu .navbar ul li a{
         color: #ffffff;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .menu .navbar ul li a:hover{
@@ -711,7 +719,7 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .bg{
-        width: 500px;
+        width: 31.25rem;
     }
 
     .esp{
@@ -720,7 +728,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .header-info{
         flex-direction:column-reverse;
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .header-txt {
@@ -730,18 +738,18 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .header-txt h1{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
     }
 
     .header-img {
         width: 100;
         text-align: center;
-        padding-top: 35px;
+        padding-top: 2.1875rem;
     }
 
     .header-img img{
-        width: 300px;
+        width: 18.75rem;
     }
 
     .info {
@@ -751,11 +759,11 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .info-1 {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .nosotros{
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .nosotros-info{
@@ -770,7 +778,7 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .nosotros-img img{
-        width: 300px;
+        width: 18.75rem;
     }
 
     .nosotros-txt{
@@ -778,13 +786,13 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .nosotros-txt h2 {
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 10px;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        margin-bottom: .625rem;
     }
 
     .nosotros-txt p {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .productos {
@@ -793,21 +801,21 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .productos h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .productos p {
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }    
 
     .producto p {
-        padding: 30px;
+        padding: 1.875rem;
         padding-bottom: 0;
     }
 
     .producto {
-        padding: 15px;
+        padding: .9375rem;
         padding-bottom: 0;
     }
 
@@ -852,7 +860,7 @@ con flex 1, se divide el espacio en partes iguales */
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:990px) {
+@media screen and (min-width: 48rem) and (max-width:61.875rem) {
 
     .bg,
     .bg-productos{
@@ -861,18 +869,18 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .slider{
-        padding: 30px;
+        padding: 1.875rem;
         width: auto;
     }
 
     .header-img img
       {
-        width: 500px;
-        margin-left: -65px;
+        width: 31.25rem;
+        margin-left: -4.0625rem;
     }
 
     .nosotros-img img{
-        width: 400px;
+        width: 25rem;
     }
 
     .nosotros{
@@ -885,7 +893,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .info{
         /* flex-direction: row; */
-        padding: 30px;
+        padding: 1.875rem;
         display: block;
     }
 
@@ -899,7 +907,7 @@ con flex 1, se divide el espacio en partes iguales */
     
     .reservation_movil img{
         margin: auto;
-        width: 400px;
+        width: 25rem;
         display: flex;
         align-items: center;
     }
@@ -907,8 +915,8 @@ con flex 1, se divide el espacio en partes iguales */
     .btn-wsp .bi-whatsapp {
         bottom: 1.5rem;
         right: 1.5rem;
-        width: 50px;
-        height: 50px;
+        width: 3.125rem;
+        height: 3.125rem;
     }
 
     .btn-wsp{
@@ -916,41 +924,41 @@ con flex 1, se divide el espacio en partes iguales */
     }
 }
 
-@media screen and (min-width :410px) and (max-width:767px) {
+@media screen and (min-width :25.625rem) and (max-width:47.9375rem) {
 
     .menu .navbar {
         top: 68%;
     }
 
     .menu .navbar ul li a{
-        padding: 15px;
+        padding: .9375rem;
     }
 
     .logo{
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .header-info {
         flex-direction: column-reverse;}
 
     .header-txt h1 {
-        font-size: 40px;}
+        font-size: 2.5rem;}
 
 
     .header-img {
         padding-top: 0;
-        margin-left: -90px;
+        margin-left: -5.625rem;
     }
 
     .header-img img {
-        width: 350px;
-        margin-left: -53px;
+        width: 21.875rem;
+        margin-left: -3.3125rem;
     }
 
     .slider{
         display: flex;
         width: auto;
-        padding: 30px;
+        padding: 1.875rem;
       }
       
       .slider img{
@@ -963,18 +971,18 @@ con flex 1, se divide el espacio en partes iguales */
       
       .slider img:hover{
         cursor: crosshair;
-        width: 125px;
+        width: 7.8125rem;
         opacity: 1;
         filter: contrast(120%);
       }
 
     .nosotros-img img {
-    width: 350px;
+    width: 21.875rem;
     }
 
     .nosotros-text-primario,
     .nosotros-text-secundario{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .nosotros-text-secundario{
@@ -982,11 +990,11 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .nosotros-text h2{
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .productos h2 {
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .productos-info{
@@ -999,8 +1007,8 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .producto h3{
-        font-size: 18px;
-        margin: 15px;
+        font-size: 1.125rem;
+        margin: .9375rem;
     }
 
     .info{
@@ -1009,7 +1017,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .info-1 {
         width: 90%;
-        margin: 20px auto;
+        margin: 1.25rem auto;
     }
 
     .reservation_movil{
@@ -1018,18 +1026,18 @@ con flex 1, se divide el espacio en partes iguales */
 
     .reservation_movil img{
         margin: auto;
-        width: 350px;
+        width: 21.875rem;
         display: flex;
         align-items: center;
     }
 
     .reservation-heading h5{
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .menu img{
-    margin-left: -22px;
-    width: 60px;
+    margin-left: -1.375rem;
+    width: 3.75rem;
    }
 
     footer{
@@ -1062,53 +1070,53 @@ con flex 1, se divide el espacio en partes iguales */
     }
 }
 
-@media screen and (max-width:409px) {  
+@media screen and (max-width:25.5625rem) {  
 
 
     .logo {
-    font-size: 30px;
+    font-size: 1.875rem;
     }  
 
     .menu img{
-        width: 55px;
+        width: 3.4375rem;
     }
 
     .menu .navbar ul li a{
       
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     .header-txt h1 {
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     .header-img {
         padding-top: 0;
-        margin-left: -90px;
+        margin-left: -5.625rem;
     }
 
     .header-img img {
-        width: 350px;
-        margin-left: -53px;
+        width: 21.875rem;
+        margin-left: -3.3125rem;
     }
 
     .slider{
         display: flex;
         width: auto;
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .bg {
-        width: 340px;
+        width: 21.25rem;
         right: 0;
     }
 
     .bg-2{
-        width: 340px;
+        width: 21.25rem;
     }
 
     .bg-productos {
-        width: 340px;
+        width: 21.25rem;
         right: 0;
     }
 
@@ -1119,11 +1127,11 @@ con flex 1, se divide el espacio en partes iguales */
     .productos h2,
     .nosotros-text h2,
     .reservation-heading h5 {
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .producto h3 {
-        margin-block: 15px;
+        margin-block: .9375rem;
     }
 
     .nosotros {
@@ -1140,7 +1148,7 @@ con flex 1, se divide el espacio en partes iguales */
     
     .info-1 {
         width: 90%;
-        margin: 20px auto;
+        margin: 1.25rem auto;
     }
 
     .reservation_movil{
@@ -1149,7 +1157,7 @@ con flex 1, se divide el espacio en partes iguales */
 
     .reservation_movil img{
         margin: auto;
-        width: 300px;
+        width: 18.75rem;
         display: flex;
         align-items: center;
     }
@@ -1162,14 +1170,14 @@ con flex 1, se divide el espacio en partes iguales */
 
     .address p {
         letter-spacing: 0;
-        font-size: 15px;
+        font-size: .9375rem;
     }
 
     footer {
-        padding: 30px;
+        padding: 1.875rem;
     }
 
     .footer-top p {
-        margin-top: 15px;
+        margin-top: .9375rem;
     }
 }
