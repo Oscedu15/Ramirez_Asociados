@@ -444,16 +444,15 @@ a {
 
 .reservation-form input{
     padding: .75rem 1rem;
-    /* font-family: 'Bebas Neue', sans-serif; */
     font-weight: 300;
     color: black;
-    outline: 0 none;
-    
+    outline: none;
+    font-family: inherit;    
 }
 
 .reservation-form input:focus{    
-    box-shadow: 0 .0625rem .0625rem rgba(229, 103, 23, 0.075)inset, 0 0 8px #2d3839;
-    border: 0; 
+    box-shadow: 0 .0625rem .0625rem rgba(229, 103, 23, 0.075)inset, 0 0 8px var(--color-primario);
+    border: 0;
 }
 
 .reservation-form .name{
@@ -815,7 +814,6 @@ con flex 1, se divide el espacio en partes iguales */
     }
 
     .producto {
-        padding: .9375rem;
         padding-bottom: 0;
     }
 
@@ -1071,18 +1069,19 @@ con flex 1, se divide el espacio en partes iguales */
 }
 
 @media screen and (max-width:25.5625rem) {  
-
-
     .logo {
-    font-size: 1.875rem;
+    font-size: 2rem;
     }  
+
+    .menu .navbar {
+        top: 80%;
+    }    
 
     .menu img{
         width: 3.4375rem;
     }
 
-    .menu .navbar ul li a{
-      
+    .menu .navbar ul li a{      
         font-size: 1.5625rem;
     }
 
