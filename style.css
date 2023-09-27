@@ -9,9 +9,9 @@
 }
 
 :root{
-    --color-primario: #114d4d;
-    --color-secundario: #6e9987;
-    --titulo-primario: #303030;
+    --color-primario: #00475f;
+    --color-secundario: #007898;
+    --titulo-primario: #002231;
     --titulo-secundario :#545454;
 }
 
@@ -695,7 +695,7 @@ con flex 1, se divide el espacio en partes iguales */
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #043838;
+        background-color: var(--color-primario);
         display: none;
     }
 
