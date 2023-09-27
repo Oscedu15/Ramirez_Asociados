@@ -12,7 +12,7 @@
     --color-primario: #00475f;
     --color-secundario: #007898;
     --titulo-primario: #002231;
-    --titulo-secundario :#545454;
+    --titulo-secundario :#122339;
 }
 
 body{
@@ -77,7 +77,7 @@ html{
 .menu .navbar ul li a::after{
     content: '';
     width: 2.5rem;
-    border-bottom: 2px solid var(--color-secundario);
+    border-bottom: 2px solid #dedede;
     position: absolute;
     transition: 0.2s;
     opacity: 0;       
