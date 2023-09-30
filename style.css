@@ -71,39 +71,28 @@ html{
     color: var(--color-primario);
     display: block;
     font-weight: 600;
+    position: relative;
 }
 
-.menu .navbar ul li a::before,
 .menu .navbar ul li a::after{
     content: '';
-    width: 2.5rem;
-    border-bottom: 2px solid #dedede;
+    width: 4.5rem;
+    height: 2px;
+    background-color: #dedede;
     position: absolute;
-    transition: 0.2s;
-    opacity: 0;       
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* para centrar el distintivo en la parte de abajo */
+    opacity: 0;
+    transition: all .3s ease;
 }
 
-.menu .navbar ul li a::after{
-    bottom: 1.5625rem;
-    width: 60%;
-    left: 0;
-}
-
-.menu .navbar ul li a::before{
-    bottom: 1.875rem;
-    width: 90%;
-    right: 0;
-}
 
 .menu .navbar ul li a:hover::after{
-   width: 40%;
    opacity: 1;
 }
 
-.menu .navbar ul li a:hover::before{
-    width: 60%;
-    opacity: 1;
-}
 
 #menu{
     display: none;
@@ -266,7 +255,13 @@ html{
 }
 
 .nosotros-img img{
-    width: 21.875rem;
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+    z-index: -1;
+    margin-right: 10px;
+    margin-top: 50px;
+    border: ridge 5px #024594
 }
 
 .nosotros-txt{
@@ -957,25 +952,36 @@ con flex 1, se divide el espacio en partes iguales */
         display: flex;
         width: auto;
         padding: 1.875rem;
-      }
+    }
       
-      .slider img{
+    .slider img{
         width: 0px;
         flex-grow: 1;
         object-fit:cover;
         opacity: .8;
         transition: .5s ease;
-      }
+    }
       
-      .slider img:hover{
+    .slider img:hover{
         cursor: crosshair;
         width: 7.8125rem;
         opacity: 1;
         filter: contrast(120%);
-      }
+    }
 
-    .nosotros-img img {
-    width: 21.875rem;
+    .nosotros-img {
+        margin-top: -25px;
+    }
+
+    .nosotros-img img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: ridge 5px #024594
+    }
+
+    .bg-2 {
+    width: 20rem;
     }
 
     .nosotros-text-primario,
@@ -1103,6 +1109,18 @@ con flex 1, se divide el espacio en partes iguales */
         display: flex;
         width: auto;
         padding: 1.875rem;
+    }
+
+
+    .nosotros-img {
+    margin-top: -25px;
+    }
+
+    .nosotros-img img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: ridge 5px #024594
     }
 
     .bg {
