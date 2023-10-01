@@ -400,11 +400,11 @@ a {
     gap: 2rem;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: url("./images/emmanuel.png")
+    background-image: url("./images/Sobre.svg")
     , url("./images/lupa2.png");
-    background-size: 21.875rem,
+    background-size: 13.875rem,
     17.5rem;
-    background-position: 0px -2.1875rem,
+    background-position: 0px 4.1875rem,
     55rem 5.625rem;    
 }
 
@@ -473,7 +473,7 @@ a {
 .reservation-form .button {
     grid-area: button;
     border: 0;
-    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
     text-transform: uppercase;
     color: white;
     border-radius: .9375rem;
@@ -483,6 +483,7 @@ a {
 
 .reservation-form .button:hover {
     transform: scale(0.95);
+    color: #bebebe;
 }
 
 /* Prueba para wasap */
@@ -690,7 +691,7 @@ con flex 1, se divide el espacio en partes iguales */
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--color-primario);
+        background-color: var(--color-secundario);
         display: none;
     }
 
@@ -711,7 +712,7 @@ con flex 1, se divide el espacio en partes iguales */
     #menu:checked ~ .navbar{
         display: initial;
     }
-
+    
     .bg{
         width: 31.25rem;
     }
